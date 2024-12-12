@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  color: white;
+  font-family: "Be Vietnam Pro", system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+
+body {
+  min-height: 100vh;
+  max-width: 1280px;
+  background: url("./assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  min-width: 320px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 10%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.text-container {
+  margin: 0 22%;
+}
+
+
+.form-data {
+  border-radius: 16px;
+  background-color: rgba(135, 82, 196, 0.3);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 35px;
+  max-width: 700px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.message-group {
+  grid-column: span 2;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  font-weight: 700;
+  color: black;
+  font-family: "Be Vietnam Pro";
+  appearance: none;
+}
+
+select {
+  background: #fff;
+  height: 70px;
+  background-image: url("./assets/Expand_down.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+input {
+  background: #fff;
+  height: 50px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+  height: 200px;
+}
+
+button {
+  grid-column: span 2;
+  padding: 25px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: white;
+  color: #4036A9;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .form-data {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin-bottom: 5%;
+  }
+
+  .logo-container {
+    padding-left: 2%;
+    padding-top: 3%;
+  }
+
+  input {
+    height: 70px;
+  }
+
+  .text-container {
+    margin: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}
